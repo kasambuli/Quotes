@@ -4,14 +4,23 @@
       <div class="form-group">
 
         <label for="name">Name</label>
-        <input type="text" required class="form-control">
+        <input type="text" [(ngModel)]="name" name="name">
       </div>
     </form>
 
   </div>
 
 
+
+  <p>NAME:{{name}}</p>
+
+  <div class="total">
+    {{votes}}
+  </div>
+  <div class="label">
+    votes
+  </div>
 </div>
-<button(click)="voteUp()">UpVote</button>
-  <br>
-  <button(click)="voteDown()">DownVote</button>
+
+<button (click)="voteUp()">UpVote</button>
+<button (click)="voteDown()">DownVote</button>
