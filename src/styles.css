@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYd7H98S6ZGmQ5VZVEnQE0LuORnkX-5-XoxIPbN63o7IE_Fyikg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 40px;
+}
