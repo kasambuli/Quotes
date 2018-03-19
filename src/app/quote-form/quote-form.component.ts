@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-
+  name: string
   quotes: string[]
   author: string;
 
@@ -14,8 +14,9 @@ export class QuoteFormComponent implements OnInit {
 
   ngOnInit() {
     this.author = ''
-
+    this.name = ''
     this.quotes = ['love is life', 'context is king'];
+
   }
   onClick() {
     this.quotes.unshift('quote');
@@ -24,7 +25,7 @@ export class QuoteFormComponent implements OnInit {
   onSubmit(quote) {
     console.log(quote);
     return false;
-    this.quotes.push(quote)
+    // this.quotes.push(quote)
   }
   deleteQuote(quote) {
     for (let i = 0; i < this.quotes.length; i++) {

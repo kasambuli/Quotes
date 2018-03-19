@@ -1,0 +1,10 @@
+.container-fluid {
+  font-size: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border: 1px solid black;
+}

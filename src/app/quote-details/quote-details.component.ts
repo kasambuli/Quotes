@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Votes } from '../votes'
+import { Quotes } from '../quotes'
 @Component({
   selector: 'app-quote-details',
   templateUrl: './quote-details.component.html',
@@ -7,20 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDetailsComponent implements OnInit {
   name: string
+  votesup: number;
+  votesdown: number;
   constructor() { }
 
   ngOnInit() {
-    this.name = ''
-    this.votes = 0;
 
+    this.votesup = 0;
+    this.votesdown = 0;
   }
-  voteUp(): boolean {
-    this.votes += 1;
-    return false;
-
-  }
-  voteDown(): boolean {
-    this.votes -= 1;
-    return false;
-  }
+  //   function voteUp(): boolean; {
+  //   this.votesup++;
+  //
+  //
+  //
+  // }
+  // function voteDown(): boolean; {
+  //   this.votesdown--;
+  //
+  //
+  // }
+  //   };
+  // }
 }
