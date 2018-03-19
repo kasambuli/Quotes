@@ -1,27 +1,18 @@
 # Quotes
+This project is about a webpage designed to enable users to create new quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## Description.
+The user inputs his name,quote and the author of the quote which is then displayed with upvote and downvote buttons to do either and also delete button to delete the quote.
+## Setup/Installation Requirements
+The website does not need any unique/specific installation requirements. All that is required is the link to the live site that has been provided below. 
 
-## Development server
+## Technologies Used
+The website layout has been created using angular, HTML and the styling with css.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Known bugs
+no known bugs
+## Live Site
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## MIT License
+Copyright (c) [2018] 
