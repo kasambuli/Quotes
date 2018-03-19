@@ -1,16 +1,15 @@
 <div class="container-fluid">
   <div class="row">
-    <form (submit)="onSubmit()">
-      <div class="form-group">
-
+    <form (submit)="onSubmit(quote.value)">
+      <div>
         <label for="name">Write Quote Here!</label>
-        <input type="text" required class="form-control">
+        <input type="text" #quote>
       </div>
       <br>
       <div class="form-group">
 
-        <label for="name">Author</label>
-        <input type="text" required class="form-control">
+        <label for="author">Author:</label>
+        <input type="text" [(ngModel)]="author" name="author">
       </div>
       <br>
 
@@ -18,4 +17,13 @@
     </form>
 
   </div>
-  <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+  <p>QUOTE:{{quote}}</p>
+  <p>AUTHOR:{{author}}</p>
+  <button (click)="onClick()" type="submit">Submit Quote</button>
+  <ul>
+    <li *ngFor="let quote of quotes; let i = index">{{i+1}}: {{quote}}
+      <button (click)="deleteQuote(quote)" type="submit">Delete Quote</button>
+    </li>
+
+
+  </ul>
