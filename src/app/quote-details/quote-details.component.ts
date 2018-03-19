@@ -7,21 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDetailsComponent implements OnInit {
   name: string
-
-  //  votes: number = ;
   constructor() { }
 
   ngOnInit() {
-    this.name = 'kasa'
-    //this.votes = 0
+    this.name = ''
+    this.votes = 0;
 
   }
-  voteUp() {
+  voteUp(): boolean {
     this.votes += 1;
     return false;
-    console.log('hello')
+
   }
-  voteDown() {
+  voteDown(): boolean {
     this.votes -= 1;
     return false;
   }
