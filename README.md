@@ -12,7 +12,7 @@ The website layout has been created using angular, HTML and the styling with css
 ## Known bugs
 no known bugs
 ## Live Site
-
+https://kasambuli.github.io/Quotes/
 
 ## MIT License
 Copyright (c) [2018] 
